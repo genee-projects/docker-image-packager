@@ -21,3 +21,16 @@
 * clean.sh
   * 一次使用后清除工具(删除所有 copy 中的 tar 文件)
   
+
+## 使用规范
+
+1. 执行 build.sh 进行 transfer 编译
+2. 修改 images.cfg 明确转移的 image
+3. 执行 transfer 文件, 将需要导出的 docker image 存储为 tar 文件(存储目录 copy)
+4. 复制 copy 文件内所有内容到需要导入 docker image 的机器上
+5. 执行 load.sh 对 tar 文件导入到机器上
+6. 本地环境执行 clean.sh 对导出的 tar 文件进行删除
+
+## 协议
+
+MIT

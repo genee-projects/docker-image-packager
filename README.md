@@ -1,4 +1,4 @@
-# docker-images-transfer
+# docker-images-packager
 
 ## 描述 
 
@@ -24,7 +24,7 @@
 
 ## 使用规范
 
-1. 执行 build.sh 进行 transfer 编译
+1. 执行 build.sh 进行 packager.go 编译
 2. 修改 images.cfg 明确转移的 image
 3. 执行 packager 文件, 将需要导出的 docker image 存储为 tar 文件(存储目录 copy)
 4. 复制 copy 文件内所有内容到需要导入 docker image 的机器上
